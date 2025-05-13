@@ -76,7 +76,6 @@ class _PinCodeWrapperState extends State<PinCodeWrapper> with WidgetsBindingObse
         onSuccess: _hidePinCode,
       );
     }
-
     // Otherwise, show the original child widget
     return widget.child;
   }

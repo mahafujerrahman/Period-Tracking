@@ -46,8 +46,7 @@ class DatabaseHelper {
       // create table if not exists
       await _createTable(db, tableName, data);
     }
-    LoggerHelper.info(
-      "==========>>DATA INSERTED TO THE TABLE $tableName <<==========",
+    LoggerHelper.info("==========>>DATA INSERTED TO THE TABLE $tableName <<==========",
     );
     // insert data
     return await db.insert(tableName, data);
